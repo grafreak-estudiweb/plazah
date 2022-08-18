@@ -1,0 +1,8 @@
+!/plugins/
+/plugins/*
+!/plugins/plazah-patterns/
+
+!themes
+themes/*
+!themes/Especialista/
+
