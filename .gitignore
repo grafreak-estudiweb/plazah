@@ -6,3 +6,6 @@
 themes/*
 !themes/Especialista/
 
+uploads
+/index.php
+.DS_Store

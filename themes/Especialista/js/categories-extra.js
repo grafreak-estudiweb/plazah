@@ -1,7 +1,9 @@
-let params = window.location.pathname.split("/");
+/* let params = window.location.pathname.split("/");
+console.log(params);
 params.splice(0, 1);
 params.splice(params.length - 1);
 let options = document.querySelectorAll("ul li a");
+console.log(params);
 switch (params[2]) {
   case "ranking":
     options[1].classList.add("active");
@@ -22,7 +24,7 @@ switch (params[2]) {
     options[0].classList.add("active");
     break;
 }
-
+ */
 //order selection
 const queryParams = new URLSearchParams(window.location.search);
 document.querySelector("#orderSelect").value = queryParams.get("order")
