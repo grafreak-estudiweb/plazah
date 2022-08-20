@@ -71,3 +71,8 @@ $width = 150;
 $height = 150;
 $crop = true;
 set_post_thumbnail_size($width, $height, $crop);
+
+
+// TODO: delete after changes NRA
+/* Disable WordPress Admin Bar for all users */
+add_filter('show_admin_bar', '__return_false');
