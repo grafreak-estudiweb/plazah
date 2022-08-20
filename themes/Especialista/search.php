@@ -10,7 +10,7 @@
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text input-group-text-c" onKeyPress="return checkSubmit(event)">
-                                        <img src="<?php bloginfo('template_url') ?>/img/search.png" alt="" class="search">
+                                        <img src="<?php bloginfo('template_url') ?>/assets/img/search.png" alt="" class="search">
                                     </div>
                                 </div>
                                 <input type="text" class="form-control form-control-c" placeholder="Buscar" style="padding-left: 2.6rem;" name="s">

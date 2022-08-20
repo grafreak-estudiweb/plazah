@@ -8,7 +8,8 @@
                         $categories = get_categories();
                         $current_cat = get_queried_object_id();
                         foreach ($categories as $category) {
-                            if ($current_cat == $category->term_id) {
+                            //TODO: add in general option the cat "todos"
+                            if ($current_cat == $category->term_id || (is_home() && $category->name == "TODOS")) {
                                 $class = "active";
                             } else {
                                 $class = "";

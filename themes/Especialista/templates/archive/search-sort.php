@@ -7,7 +7,7 @@
                             <div class="input-group" id=search-input>
                                 <div class="input-group-prepend">
                                     <div class="input-group-text input-group-text-c">
-                                        <img src="<?php bloginfo('template_url') ?>/img/search.png" alt="" class="search" onKeyPress="return checkSubmit(event)">
+                                        <img src="<?php bloginfo('template_url') ?>/assets/img/search.png" alt="" class="search" onKeyPress="return checkSubmit(event)">
                                     </div>
                                 </div>
                                 <input id="search" type="text" class="form-control form-control-c" placeholder="Buscar" style="padding-left: 2.6rem;" oninput="searchPosts(event)" onfocusout="searchFocusOut()" onfocus="cleanSearch()">

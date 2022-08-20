@@ -32,7 +32,7 @@ document.querySelector("#orderSelect").value = queryParams.get("order")
   : "recent";
 
 //fix on list element post category style
-const postCategory = document.querySelectorAll("span .color-74 a");
+/* const postCategory = document.querySelectorAll("span .color-74 a");
 postCategory.forEach((element) => {
   if (
     element.innerHTML.includes("Sin categor") ||
@@ -49,3 +49,4 @@ const excerpts = document.querySelectorAll(".font-16 p");
 excerpts.forEach((excerpt) => {
   excerpt.classList.add("font-16");
 });
+ */

@@ -1,0 +1,166 @@
+p.color-203 {
+  line-height: 137% !important;
+}
+
+p.color-203.bolder {
+  line-height: 115% !important;
+}
+
+/* NRA added on 2020/08/03: */
+
+.single-main > .row:first-of-type {
+  padding-top: 4px;
+}
+
+/* Post tipo Ranking */
+
+.products-list {
+  counter-reset: list-number;
+  padding-left: 39px;
+}
+.group-product {
+  margin-bottom: 40px;
+}
+
+.group-product > div h2:before {
+  counter-increment: list-number;
+  content: counter(list-number) ".";
+  margin-left: -27px;
+  width: 28px;
+  display: inline-block;
+}
+
+.group-product h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.group-product h2 + .sub-h2-product {
+  font-weight: 700;
+  line-height: 22px;
+  color: #747a7b;
+}
+
+.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 16px;
+  width: 130px;
+  height: 32px;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #fc2561;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #c2c8ca;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:hover,
+.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:focus,
+.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:active {
+  background-color: #ffeef2;
+}
+
+/* Post tipo Evento */
+
+.secondary-text,
+.group-product h2 + p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #747a7b;
+}
+
+.primary-btn {
+  width: 100%;
+}
+
+.primary-btn a {
+  background: #fc2561;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  height: 48px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.primary-btn a:hover,
+.primary-btn a:focus,
+.primary-btn a:active {
+  background-color: #d61f52 !important;
+}
+
+.likebtn_container {
+  margin-left: 0 !important;
+  padding-bottom: 16px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  figure.size-full,
+  figure.is-type-video {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .primary-btn {
+    max-width: 310px;
+  }
+}
+
+/* Post tipo Formación */
+iframe.youtube-player svg .ytp-large-play-button-bg {
+  fill: white !important;
+}
+
+iframe.youtube-player svg path:last-of-type {
+  fill: black !important;
+}
+
+.lb-style-custom .lb-like,
+.lb-style-custom .lb-dislike {
+  height: 32px !important;
+  width: 32px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+
+.single-main .lb-style-custom .lb-count {
+  font-size: 0.875rem !important;
+  color: #20313a;
+  top: 4px;
+}
+
+.single-main #lb-label {
+  font-size: 0.875rem;
+  padding-left: 0.95em !important;
+}
