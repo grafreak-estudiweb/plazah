@@ -103,6 +103,9 @@
                                             <div class="color-74 font-16 mb-2 lh-22 list-item"><?php the_excerpt(); ?></div>
                                             <div class="row">
                                                 <div style="display: flex; justify-content: end">
+                                                    <span style="margin-top: -0.55em;">
+                                                        <p class="color-74 bolder font-11 mb-0 text-upper"><?php the_category(' '); ?></p>
+                                                    </span>
                                                     <?php if (do_shortcode('[likebtn_likes]') > 0) { ?>
                                                         <span class="align-span text-end color-74 mb-0 font-12 bolder">
                                                             <img id="img-heart" src="<?php bloginfo('template_url') ?>/img/heart.svg" alt="">
