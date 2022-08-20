@@ -5,6 +5,7 @@
 !themes
 themes/*
 !themes/Especialista/
+themes/Especialista/css/*
 
 uploads
 /index.php

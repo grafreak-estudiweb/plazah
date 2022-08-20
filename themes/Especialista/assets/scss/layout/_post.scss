@@ -39,7 +39,7 @@ p.color-203.bolder {
 .group-product h2 + .sub-h2-product {
   font-weight: 700;
   line-height: 22px;
-  color: #747a7b;
+  color: var(--gray-darker);
 }
 
 .wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link {
@@ -55,7 +55,7 @@ p.color-203.bolder {
   margin-bottom: 25px;
   font-weight: 400;
   line-height: 10px;
-  color: #fc2561;
+  color: var(--brand-color);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -84,7 +84,7 @@ p.color-203.bolder {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
-  color: #747a7b;
+  color: var(--gray-darker);
 }
 
 .primary-btn {
@@ -92,7 +92,7 @@ p.color-203.bolder {
 }
 
 .primary-btn a {
-  background: #fc2561;
+  background: var(--brand-color);
   color: #ffffff;
   border-radius: 5px;
   font-weight: 700;
@@ -156,7 +156,7 @@ iframe.youtube-player svg path:last-of-type {
 
 .single-main .lb-style-custom .lb-count {
   font-size: 0.875rem !important;
-  color: #20313a;
+  color: var(--text-color);
   top: 4px;
 }
 
