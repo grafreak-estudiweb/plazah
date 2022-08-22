@@ -6,7 +6,7 @@
       @content;
     }
   } @else if $class==smmax {
-    @media (max-width: 576px) {
+    @media (max-width: 600px) {
       @content;
     }
   } @else if $class==mdmax {
@@ -26,7 +26,7 @@
       @content;
     }
   } @else if $class==sm {
-    @media (min-width: 576px) {
+    @media (min-width: 600px) {
       @content;
     }
   } @else if $class==md {
@@ -54,9 +54,11 @@
   }
 }
 
-@mixin xrem($property, $value) {
-  #{$property}: $value * $baseFontSize;
-  #{$property}: #{$value}rem;
+//px input (only the number)
+$baseFontSize: 16;
+@mixin remFS($sizeValue) {
+  font-size: ($sizeValue) * 1px;
+  font-size: calc($sizeValue / $baseFontSize) * 1rem;
 }
 
 // Rem output with px fallback

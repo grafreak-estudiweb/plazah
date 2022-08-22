@@ -1,4 +1,4 @@
-<article class="article <?php echo is_sticky() == 1 ? "sticky" : "normal"; ?>" style="cursor: pointer;" onclick="window.location='<?php the_permalink() ?>';">
+<article class="article flex-row <?php echo is_sticky() == 1 ? "sticky" : "normal"; ?>" style="cursor: pointer;" onclick="window.location='<?php the_permalink() ?>';">
     <figure>
         <a href="<?php the_permalink(); ?>">
             <?php if (has_post_thumbnail()) {

@@ -7,10 +7,10 @@ body[data-theme="default"] {
   --brand-light: lighten(var(--brand-color), 77%);
   --brand-lightest: lighten(var(--brand-color), 92%);
   --secondary: #319ce7;
-  --gray: #c2c8ca;
+  --gray-default: #c2c8ca;
   --gray-darker: #747a7b;
-  --text-color: #20313a;
+  --gray-darkest: #20313a;
   --gray-light: #e6ecf0;
   --gray-lightest: #f5f6f7;
-  --clear: #ffffff;
+  --light: #ffffff;
 }

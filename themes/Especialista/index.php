@@ -3,13 +3,13 @@
 <!-- Search, sort and pills -->
 <?php include(locate_template("templates/archive/search-sort.php")); ?>
 <!-- categories links -->
-<?php include(locate_template("templates/archive/categories-pills.php")); ?>
+<?php include(locate_template("templates/archive/category-pills.php")); ?>
 <!-- / Search, sort and pills -->
 <!-- LISTADO -->
 <section class="bg-f5 mt-101">
-    <div class="container py-md-4">
+    <div class="container">
         <div class="row">
-            <div class="col-12  px-0 px-md-2 px-xl-0">
+            <div class="col-12">
                 <?php
                 $sticky = get_option("sticky_posts");
                 if (!empty($sticky)) {

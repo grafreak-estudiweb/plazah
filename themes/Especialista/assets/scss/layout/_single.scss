@@ -50,9 +50,11 @@ p.color-203.bolder {
 .group-product > div h2:before {
   counter-increment: list-number;
   content: counter(list-number) ".";
-  margin-left: -27px;
   width: 28px;
   display: inline-block;
+  @include bkp(sm) {
+    margin-left: -27px;
+  }
 }
 
 .group-product h2 {
@@ -181,7 +183,7 @@ iframe.youtube-player svg path:last-of-type {
 
 .single-main .lb-style-custom .lb-count {
   font-size: 0.875rem !important;
-  color: var(--text-color);
+  color: var(--gray-darkest);
   top: 4px;
 }
 

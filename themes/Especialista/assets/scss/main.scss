@@ -1,7 +1,8 @@
 @import "base/base";
 @import "base/variables";
 @import "base/mixins";
+@import "components/components";
 @import "layout/style";
+@import "layout/archive";
 @import "layout/general";
-@import "layout/post";
-@import "components/pills";
+@import "layout/single";
