@@ -7,6 +7,10 @@ themes/*
 !themes/Especialista/
 themes/Especialista/css/*
 
+languages
+upgrade
 uploads
 /index.php
 .DS_Store
+*.code-workspace
+z_old*.*

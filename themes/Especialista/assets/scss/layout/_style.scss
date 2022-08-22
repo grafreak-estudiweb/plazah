@@ -28,7 +28,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
-  color: #c5c5c5 !important;
+  color: var(--gray);
   text-align: center;
   white-space: nowrap;
   background-color: transparent;
@@ -53,7 +53,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #c5c5c5 !important;
+  color: var(--gray) !important;
   text-align: center;
   white-space: nowrap;
   background-color: transparent;
@@ -74,11 +74,11 @@
   border: 1px solid var(--gray);
   border-radius: 5px !important;
   font-size: 14px;
-  color: #767676;
+  color: var(--gray-darker);
 }
 
 .form-control-c:focus {
-  border: 1px solid #212529;
+  border: 1px solid var(--text-color);
   box-shadow: none;
 }
 
@@ -105,7 +105,7 @@
 }
 
 .form-select-c:focus {
-  border-color: #212529;
+  border-color: var(--text-color);
   outline: 0;
   box-shadow: none;
 }
@@ -125,8 +125,8 @@
 
 .nav-pills-c > li > .nav-link {
   color: var(--text-color);
-  background-color: var(--gray-light);
-  border: 1px solid var(--gray-light);
+  background-color: var(--gray-lightest);
+  border: 1px solid var(--gray-lightest);
   border-radius: 20px;
   font-size: 12px;
   text-transform: uppercase;
@@ -137,8 +137,8 @@ margin-right: 4px;*/
 }
 
 .nav-pills-c > li > .nav-link:hover {
-  background-color: #f3f3f4;
-  border: 1px solid #ccc;
+  background-color: var(--gray-lightest);
+  border: 1px solid var(--gray);
 }
 
 .nav-pills-c .nav-link.active,
@@ -449,7 +449,7 @@ span p .color-74 {
 }
 
 .filled {
-  color: #212529 !important;
+  color: var(--text-color) !important;
 }
 
 #search:focus {

@@ -15,12 +15,11 @@ body {
   color: var(--text-color);
 }
 
-a {
-  text-decoration-line: none !important;
+.container {
+  max-width: 600px;
+  padding: 0 16px;
 }
 
-@media only screen and (min-width: 581px) {
-  .container {
-    width: 565px !important;
-  }
+a {
+  text-decoration-line: none !important;
 }

@@ -8,18 +8,21 @@
                         $categories = get_categories();
                         $current_cat = get_queried_object_id();
                         foreach ($categories as $category) {
-                            //TODO: add in general option the cat "todos"
-                            if ($current_cat == $category->term_id || (is_home() && $category->name == "TODOS")) {
-                                $class = "active";
-                            } else {
-                                $class = "";
+                            //TODO: add in general option the cat "todos" and Sin categoría = 1
+
+                            if ($category->term_id != 1) {
+                                if ($current_cat == $category->term_id || (is_home() && $category->name == "TODOS")) {
+                                    $class = "active";
+                                } else {
+                                    $class = "";
+                                }
+                                printf(
+                                    '<li><a href="%1$s" class="nav-link %3$s font-12 bolder">%2$s</a></li>',
+                                    esc_url(get_category_link($category->term_id)),
+                                    esc_html($category->name),
+                                    esc_html($class)
+                                );
                             }
-                            printf(
-                                '<li><a href="%1$s" class="nav-link %3$s font-12 bolder">%2$s</a></li>',
-                                esc_url(get_category_link($category->term_id)),
-                                esc_html($category->name),
-                                esc_html($class)
-                            );
                         }
                         ?>
                     </ul>
