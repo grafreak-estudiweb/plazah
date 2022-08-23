@@ -17,6 +17,22 @@
   }
 }
 
+.single {
+  p {
+    line-height: 150%;
+  }
+  h1,
+  h2 {
+    line-height: 115%;
+  }
+  h1 {
+    margin-top: 16px;
+  }
+  .excerpt-single {
+    line-height: 137%;
+  }
+}
+
 .single time {
   font-size: 0.75rem;
   line-height: 15px;
@@ -51,16 +67,16 @@ p.color-203.bolder {
   counter-increment: list-number;
   content: counter(list-number) ".";
   width: 28px;
+  margin-left: -27px;
   display: inline-block;
-  @include bkp(sm) {
+  /*   @include bkp(sm) {
     margin-left: -27px;
-  }
+  } */
 }
 
 .group-product h2 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 25px;
 }
 
 .group-product h2 + .sub-h2-product {

@@ -26,7 +26,7 @@
                                     foreach ($categories as $category) {
                                         //category parent = 0 --> todos
                                         if ($category->parent != 0 && $category->name != 'Sin categoría') {
-                                            $output .= '<li class="cat-pill"><a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)) . '">' . esc_html($category->name) . '</a></li>';
+                                            $output .= '<li><a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)) . '">' . esc_html($category->name) . '</a></li>';
                                         }
                                     }
                                     echo trim($output);
@@ -37,11 +37,11 @@
 
                             </div>
                             <div class="col-12">
-                                <h1 class="font-40 color-203 bolder mt-3 mt-md-2 mb-1 mb-md-0"><?php the_title(); ?></h1>
+                                <h1 class="font-40 color-203 bolder mb-1 mb-md-0"><?php the_title(); ?></h1>
                                 <?php
                                 $has_exc_bellow = get_field('has_exc_b_title');
                                 if ($has_exc_bellow) {
-                                    echo '<p class="color-74 bolder mb-1 mt-1">' . get_the_excerpt() . '</p>';
+                                    echo '<p class="excerpt-single color-74 bold mb-1 mt-1">' . get_the_excerpt() . '</p>';
                                 }
                                 ?>
                             </div>

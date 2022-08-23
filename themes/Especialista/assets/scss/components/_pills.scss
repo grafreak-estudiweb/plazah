@@ -5,21 +5,23 @@
   align-items: center;
 }
 .category-pills {
-  margin: 0;
+  margin: 0.5rem 0;
   padding: 0;
   line-height: 15px;
   list-style-type: none;
   li {
     display: inline-block;
     margin-right: 5px;
-    a {
-      background-color: var(--gray-light);
-      color: var(--gray-darker);
-      font-size: 0.688rem; //11px
-      line-height: 15px;
-      font-weight: 700;
-      border-radius: 5px;
-      padding: 3px 9px;
-    }
   }
+}
+
+.category-pills li a,
+.category-pills li.cat-pill {
+  background-color: var(--gray-light);
+  color: var(--gray-darker);
+  font-size: 0.688rem; //11px
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px 10px;
 }

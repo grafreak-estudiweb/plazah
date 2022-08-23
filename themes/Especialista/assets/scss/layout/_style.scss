@@ -255,3 +255,28 @@ span p .color-74 {
 #img-heart {
   max-width: none;
 }
+
+/* code in custom css in theme: todo: to see if is needed or not */
+
+/*buttons*/
+.more-link,
+.more-link:visited {
+  color: #fff;
+  background-color: #02de83;
+  border-radius: 100px;
+  border: none;
+  padding: 8px 35px;
+}
+
+.more-link:hover {
+  background-color: #29c685;
+  color: #fff !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+  color: #fff;
+  background-color: #02de83;
+  border-radius: 100px;
+  border: none;
+  padding: 8px 35px;
+}

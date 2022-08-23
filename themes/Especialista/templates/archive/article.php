@@ -18,7 +18,7 @@
                 foreach ($categories as $category) {
                     //category parent = 0 --> todos
                     if ($category->parent != 0 && $category->name != 'Sin categoría') {
-                        $output .= '<li class="cat-pill"><a href="' . esc_url(get_category_link($category->term_id)) . '" alt="' . esc_attr(sprintf(__('View all posts in %s', 'textdomain'), $category->name)) . '">' . esc_html($category->name) . '</a></li>';
+                        $output .= '<li class="cat-pill">' . esc_html($category->name) . '</li>';
                     }
                 }
                 echo trim($output);

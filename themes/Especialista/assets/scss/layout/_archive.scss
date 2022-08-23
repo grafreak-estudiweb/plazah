@@ -33,24 +33,30 @@
   &.flex-row {
     align-items: flex-start;
   }
+
   figure {
-    max-width: 80px;
+    // max-width: 60px;
     img.wp-post-image {
       margin: 0;
-      max-width: 80px;
+      max-width: 60px;
       height: auto;
+      @include bkp(sm) {
+        max-width: 80px;
+      }
     }
   }
   .content {
     h2 {
       margin: 0 0 4px 0;
+      line-height: 137%;
       @include remFS(16);
     }
     .excerpt {
       margin-top: -0.2rem;
       p {
-        line-height: 22px;
-        margin-bottom: 0.5rem;
+        line-height: 137%;
+        margin-bottom: 0;
+        color: var(--gray-darker);
       }
     }
   }
