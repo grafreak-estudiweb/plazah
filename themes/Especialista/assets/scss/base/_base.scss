@@ -5,6 +5,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 html {
@@ -17,8 +18,11 @@ body {
 
 .container {
   max-width: 600px;
-  padding: 0 16px;
+  padding: 0 8px;
   margin: 0 auto;
+  @include bkp(sm) {
+    padding: 0 16px;
+  }
 }
 
 a {
@@ -39,4 +43,5 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  color: var(--gray-darkest);
 }

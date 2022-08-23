@@ -17,7 +17,7 @@ function add_theme_scripts()
         array('jquery')
     );
 
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
+    //   wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
     wp_enqueue_style('default', get_stylesheet_uri());
     wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.css', null, null, 'screen');
 }
@@ -38,6 +38,14 @@ function category_pills($atts, $item, $args)
     $class = 'nav-link font-12 bolder';
     $atts['class'] = $class;
     return $atts;
+}
+
+function the_title_limit($length, $replacer = '...')
+{
+    $string = get_the_title('', '', FALSE);
+    if (strlen($string) > $length)
+        $string = (preg_match('/^(.*)\W.*$/', substr($string, 0, $length + 1), $matches) ? $matches[1] : substr($string, 0, $length)) . $replacer;
+    return $string;
 }
 
 if (function_exists('add_theme_support')) {

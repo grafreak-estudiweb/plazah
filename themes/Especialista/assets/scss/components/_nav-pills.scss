@@ -2,6 +2,10 @@
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 8px;
+  @include bkp(smmax) {
+    justify-content: left;
+    padding-left: 8px;
+  }
 }
 
 .nav-pills-c > li > .nav-link {
@@ -36,9 +40,9 @@ margin-right: 4px;*/
   border: 1px solid var(--secondary);
 }
 
+.prx-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
 @include bkp(smmax) {
-  .prx-0 {
-    padding-right: 0;
-    padding-left: 0;
-  }
 }

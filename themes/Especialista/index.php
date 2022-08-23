@@ -9,7 +9,7 @@
 <section class="bg-f5 mt-101">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 wrap-articles">
                 <?php
                 $sticky = get_option("sticky_posts");
                 if (!empty($sticky)) {

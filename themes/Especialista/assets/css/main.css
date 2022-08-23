@@ -1,9 +1,11 @@
 @charset "UTF-8";
+/* == breakpoints == */
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", Roboto, Helvetica, "Helvetica Neue", Oxygen-Sans, Ubuntu, Cantarell, Arial, sans-serif, "Apple Color Emoji";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 html {
@@ -16,8 +18,13 @@ body {
 
 .container {
   max-width: 600px;
-  padding: 0 16px;
+  padding: 0 8px;
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 
 a {
@@ -39,6 +46,7 @@ h1,
 h2,
 h3 {
   font-weight: 700;
+  color: var(--gray-darkest);
 }
 
 /* colors */
@@ -57,11 +65,16 @@ body[data-theme=default] {
   --light: #ffffff;
 }
 
-/* == breakpoints == */
 .nav-pills-c {
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 8px;
+}
+@media (max-width: 600px) {
+  .nav-pills-c {
+    justify-content: left;
+    padding-left: 8px;
+  }
 }
 
 .nav-pills-c > li > .nav-link {
@@ -96,12 +109,11 @@ body[data-theme=default] {
   border: 1px solid var(--secondary);
 }
 
-@media (max-width: 600px) {
-  .prx-0 {
-    padding-right: 0;
-    padding-left: 0;
-  }
+.prx-0 {
+  padding-right: 0;
+  padding-left: 0;
 }
+
 .meta {
   display: flex;
   justify-content: space-between;
@@ -109,14 +121,14 @@ body[data-theme=default] {
 }
 
 .category-pills {
-  margin: 0.5rem 0;
+  margin: 0;
   padding: 0;
   line-height: 15px;
   list-style-type: none;
 }
 .category-pills li {
   display: inline-block;
-  margin-right: 5px;
+  margin: 0.5rem 5px 0 0;
 }
 
 .category-pills li a,
@@ -134,9 +146,12 @@ body[data-theme=default] {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.header-top .container {
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .header-top .input-group {
   width: 60%;
-  margin-left: 8px;
 }
 @media (min-width: 600px) {
   .header-top .input-group {
@@ -145,7 +160,6 @@ body[data-theme=default] {
 }
 .header-top form {
   width: 40%;
-  margin-right: 8px;
 }
 @media (min-width: 600px) {
   .header-top form {
@@ -155,6 +169,12 @@ body[data-theme=default] {
 .header-top .flex-row {
   gap: 16px;
   justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .header-top .flex-row {
+    padding-left: 10px;
+    padding-right: 12px;
+  }
 }
 
 .input-group-text {
@@ -198,8 +218,8 @@ body[data-theme=default] {
   border-left: 1px solid transparent;
   border-radius: 5px;
   position: absolute;
-  left: 15px;
-  top: 7px;
+  left: 12px;
+  top: 4px;
   z-index: 200;
   width: 50px;
 }
@@ -226,11 +246,11 @@ body[data-theme=default] {
   font-weight: 400;
   line-height: 1.5;
   color: var(--gray-darkest);
-  background-color: var(--clear);
-  background-image: url("../img/caret-down.png") !important;
+  background-color: var(--light);
+  background-image: url("../img/caret-down.svg") !important;
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 10px 7px;
+  background-position: right 5px center;
+  background-size: 30px 20px;
   border: 1px solid var(--gray-default);
   border-radius: 5px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -465,10 +485,6 @@ span p .color-74 {
   #likes_counter {
     display: inline-block !important;
   }
-  .nav-pills-c {
-    justify-content: left;
-    flex-wrap: nowrap;
-  }
 }
 .hide {
   display: none !important;
@@ -530,6 +546,10 @@ span p .color-74 {
   flex-wrap: nowrap;
 }
 
+.wrap-articles {
+  padding: 0;
+}
+
 .article {
   border: 1px solid var(--light);
   margin-bottom: 2px;
@@ -539,20 +559,23 @@ span p .color-74 {
   padding: 16px 16px 20px 16px;
   gap: 8px;
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .article {
     gap: 16px;
+    padding: 16px 16px 20px 16px;
   }
 }
 .article.sticky {
   border: 1px solid var(--brand-color);
   border-radius: 5px;
   box-shadow: none;
-  margin: 8px;
+  margin: 8px 8px 8px 9px;
+  padding-left: 8px;
 }
 @media (min-width: 600px) {
   .article.sticky {
     margin: 25px 0;
+    padding-left: 16px;
   }
 }
 .article.flex-row {
@@ -578,9 +601,17 @@ span p .color-74 {
   margin-top: -0.2rem;
 }
 .article .content .excerpt p {
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 137%;
   margin-bottom: 0;
   color: var(--gray-darker);
+}
+@media (min-width: 600px) {
+  .article .content .excerpt p {
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 .single header .top-header {
@@ -783,4 +814,4 @@ iframe.youtube-player svg path:last-of-type {
 .single-main #lb-label {
   font-size: 0.875rem;
   padding-left: 0.95em !important;
-}/*# sourceMappingURL=main.css.map */
+}
