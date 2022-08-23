@@ -23,6 +23,12 @@ function add_theme_scripts()
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
+/*TODO: comprobar if WP.com doesn't admit admin styles? */
+function admin_style()
+{
+    wp_enqueue_style('admin-styles', get_template_directory_uri() . '/assets/css/admin.css');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
 
 
 // Category Pills
@@ -51,7 +57,7 @@ function the_title_limit($length, $replacer = '...')
 if (function_exists('add_theme_support')) {
     add_theme_support('post-thumbnails');
     add_theme_support('align-wide');
-    /*    add_theme_support('disable-custom-colors');
+    add_theme_support('disable-custom-colors');
     add_theme_support('editor-color-palette', array(
         array(
             'name'  => __('Color Marca', 'ea_genesis_child'),
@@ -60,20 +66,20 @@ if (function_exists('add_theme_support')) {
         ),
         array(
             'name'  => __('Texto principal', 'ea_genesis_child'),
-            'slug'  => 'primary-text',
+            'slug'  => 'gray-darkest',
             'color' => '#20313A',
         ),
         array(
             'name'  => __('Texto secundario', 'ea_genesis_child'),
-            'slug'  => 'secondary-text',
-            'color' => '#747A7B',
+            'slug'  => 'secondary',
+            'color' => '#319ce7',
         ),
         array(
             'name'    => __('Destacado secundario', 'ea_genesis_child'),
             'slug'    => 'secondary-default',
             'color'    => '#319CE7',
         ),
-    )); */
+    ));
 }
 
 
