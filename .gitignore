@@ -6,6 +6,7 @@
 themes/*
 !themes/Especialista/
 themes/Especialista/css/*
+themes/Especialista/assets/css/*
 
 languages
 upgrade
@@ -14,3 +15,4 @@ uploads
 .DS_Store
 *.code-workspace
 z_old*.*
+
