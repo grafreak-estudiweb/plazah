@@ -76,11 +76,7 @@ if (function_exists('add_theme_support')) {
     )); */
 }
 
-
-
-
 //wp_enqueue_script('support', bloginfo('template_url') . "/js/categories-extra.js");
-
 
 // Resizing of post featured image
 $width = 150;
@@ -92,3 +88,69 @@ set_post_thumbnail_size($width, $height, $crop);
 // TODO: delete after changes NRA
 /* Disable WordPress Admin Bar for all users */
 add_filter('show_admin_bar', '__return_false');
+
+
+add_action('acf/init', 'register_blocks');
+function register_blocks()
+{
+
+    // Check function exists.
+    if (function_exists('acf_register_block_type')) {
+
+        // register a testimonial block.
+        acf_register_block_type(array(
+            'name'              => 'button-primary-filled',
+            'title'             => __('Botón principal relleno'),
+            'description'       => __('Botón con color de fondo.'),
+            'render_template'   => 'template-parts/blocks/buttons/button-filled.php',
+            'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',
+            'category'          => 'formatting',
+            'icon'              => 'button',
+            'mode'              => 'auto',
+            'keywords'          => array('buttons', 'filled'),
+            'supports'          => array(
+                'align'         => false,
+            ),
+            'example'           => array(
+                'attributes'    => array(
+                    'mode'      => 'preview',
+                    'data'      => array(
+                        'button-primary-filled' => "APUNTARME A LA MASTERCLASS",
+                        'is_preview'      => true
+                    )
+                )
+            )
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'button-primary-stroked',
+            'title'             => __('Botón principal transparente'),
+            'description'       => __('Botón transparente.'),
+            'render_template'   => 'template-parts/blocks/buttons/button-stroked.php',
+            'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',
+            'category'          => 'formatting',
+            'icon'              => 'button',
+            'keywords'          => array('buttons', 'stroked'),
+            'mode'              => 'preview',
+            'supports'          => array(
+                'align'         => false
+            ),
+
+        ));
+
+        acf_register_block_type(array(
+            'name'              => 'products-list',
+            'title'             => __('Productos'),
+            'description'       => __('Lista de productos.'),
+            'render_template'   => 'template-parts/blocks/products/products-list.php',
+            'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',
+            'category'          => 'formatting',
+            'icon'              => 'feedback',
+            'keywords'          => array('product'),
+            'mode'              => 'auto',
+            'supports'          => array(
+                'align'         => false,
+            ),
+        ));
+    }
+}
