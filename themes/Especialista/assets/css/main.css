@@ -65,6 +65,21 @@ body[data-theme=default] {
   --light: #ffffff;
 }
 
+body[data-theme=ladymall] {
+  --brand-color: #e6427a;
+  --brand-darker: #c33868;
+  --brand-darkest: #a12e55;
+  --brand-light: #f9d3e0;
+  --brand-lightest: #fdf0f4;
+  --secondary: #319ce7;
+  --gray-default: #c2c8ca;
+  --gray-darker: #747a7b;
+  --gray-darkest: #20313a;
+  --gray-light: #e6ecf0;
+  --gray-lightest: #f5f6f7;
+  --light: #ffffff;
+}
+
 .nav-pills-c {
   justify-content: flex-start;
   flex-wrap: nowrap;
@@ -285,20 +300,12 @@ body[data-theme=default] {
   font-size: 16px;
 }
 
-.font-14 {
-  font-size: 14px;
-}
-
 .font-12 {
   font-size: 12px;
 }
 
 .font-11 {
   font-size: 11px !important;
-}
-
-.font-20 {
-  font-size: 20px;
 }
 
 .font-40 {
@@ -337,39 +344,14 @@ body[data-theme=default] {
   margin-top: 101px;
 }
 
-.arrow-left {
-  position: absolute;
-  left: 15px;
-  vertical-align: middle;
-}
-
 .mt-56 {
   margin-top: 56px;
 }
 
-.btn-pink-lg {
-  /* BUTTON */
-  box-sizing: border-box;
-  width: 328px;
-  height: 48px;
-  left: 16px;
-  top: 704px;
-  background: var(--brand-color);
-  border-radius: 5px;
-  /* TEXT */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 10px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--light);
-}
-
-.btn-pink-lg:hover {
-  border: 1px solid var(--gray-default);
-  color: var(--gray-default);
+.arrow-left {
+  position: absolute;
+  left: 15px;
+  vertical-align: middle;
 }
 
 .btn-heart {
@@ -461,14 +443,6 @@ span p .color-74 {
           text-decoration-line: none;
 }
 
-.pl-25 {
-  padding-left: 25px;
-}
-
-.pr-10 {
-  padding-right: 10px;
-}
-
 @media screen and (max-width: 768px) {
   .lh-22 {
     line-height: 22px;
@@ -507,39 +481,10 @@ span p .color-74 {
   margin-left: 16px;
 }
 
-.mt-8 {
-  margin-top: 8px;
-}
-
 #img-heart {
   max-width: none;
 }
 
-/* code in custom css in theme: todo: to see if is needed or not */
-/*buttons*/
-.more-link,
-.more-link:visited {
-  color: #fff;
-  background-color: #02de83;
-  border-radius: 100px;
-  border: none;
-  padding: 8px 35px;
-}
-
-.more-link:hover {
-  background-color: #29c685;
-  color: #fff !important;
-}
-
-/* 
-.wp-block-button.is-style-outline .wp-block-button__link {
-  color: #fff;
-  background-color: #02de83;
-  border-radius: 100px;
-  border: none;
-  padding: 8px 35px;
-}
- */
 .flex-row {
   display: flex;
   justify-content: flex-start;

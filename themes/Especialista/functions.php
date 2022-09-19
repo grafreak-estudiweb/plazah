@@ -129,7 +129,7 @@ function register_blocks()
             'category'          => 'formatting',
             'icon'              => 'button',
             'keywords'          => array('buttons', 'stroked'),
-            'mode'              => 'preview',
+            'mode'              => 'auto',
             'supports'          => array(
                 'align'         => false
             ),
