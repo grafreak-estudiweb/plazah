@@ -105,9 +105,9 @@ function register_blocks()
 
         // register a testimonial block.
         acf_register_block_type(array(
-            'name'              => 'button-primary-filled',
-            'title'             => __('Botón principal relleno'),
-            'description'       => __('Botón con color de fondo.'),
+            'name'              => 'btn-primary-filled',
+            'title'             => __('Botón principal'),
+            'description'       => __('Botón principal, con color de fondo'),
             'render_template'   => 'template-parts/blocks/buttons/button-filled.php',
             'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',
             'category'          => 'formatting',
@@ -117,21 +117,13 @@ function register_blocks()
             'supports'          => array(
                 'align'         => false,
             ),
-            'example'           => array(
-                'attributes'    => array(
-                    'mode'      => 'preview',
-                    'data'      => array(
-                        'button-primary-filled' => "APUNTARME A LA MASTERCLASS",
-                        'is_preview'      => true
-                    )
-                )
-            )
+
         ));
 
         acf_register_block_type(array(
-            'name'              => 'button-primary-stroked',
-            'title'             => __('Botón principal transparente'),
-            'description'       => __('Botón transparente.'),
+            'name'              => 'btn-secondary-stroked',
+            'title'             => __('Botón secundario'),
+            'description'       => __('Botón secundario, con fondo transparente.'),
             'render_template'   => 'template-parts/blocks/buttons/button-stroked.php',
             'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',
             'category'          => 'formatting',
@@ -146,7 +138,7 @@ function register_blocks()
 
         acf_register_block_type(array(
             'name'              => 'products-list',
-            'title'             => __('Productos'),
+            'title'             => __('Lista de productos'),
             'description'       => __('Lista de productos.'),
             'render_template'   => 'template-parts/blocks/products/products-list.php',
             'enqueue_style'     => get_template_directory_uri() . '/assets/css/blocks.css',

@@ -35,7 +35,7 @@ if (have_rows('pz_products_list')) : ?>
                     }
                     ?>
                 </figure>
-                <div class="button-primary-stroked">
+                <div class="btn-secondary-stroked">
                     <a href="<?php echo get_sub_field('pz_product_btn_url'); ?>"><?php echo get_sub_field('pz_product_btn_text'); ?></a>
                 </div>
                 <div class="content-product">

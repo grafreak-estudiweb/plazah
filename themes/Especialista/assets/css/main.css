@@ -52,10 +52,10 @@ h3 {
 /* colors */
 body[data-theme=default] {
   --brand-color: #fc2561;
-  --brand-darker: darken(var(--brand-color), 15%);
-  --brand-darkest: darken(var(--brand-color), 30%);
-  --brand-light: lighten(var(--brand-color), 77%);
-  --brand-lightest: lighten(var(--brand-color), 92%);
+  --brand-darker: #d62052;
+  --brand-darkest: #b01a44;
+  --brand-light: #fecddb;
+  --brand-lightest: #ffeef2;
   --secondary: #319ce7;
   --gray-default: #c2c8ca;
   --gray-darker: #747a7b;
@@ -592,6 +592,9 @@ span p .color-74 {
     max-width: 80px;
   }
 }
+.article .content {
+  width: 100%;
+}
 .article .content h2 {
   margin: 0 0 4px 0;
   line-height: 137%;
@@ -666,72 +669,6 @@ p.color-203.bolder {
 }
 
 /* Post tipo Ranking */
-.products-list {
-  counter-reset: list-number;
-  padding-left: 39px;
-}
-
-.group-product {
-  margin-bottom: 40px;
-}
-
-.group-product > div h2:before {
-  counter-increment: list-number;
-  content: counter(list-number) ".";
-  width: 28px;
-  margin-left: -27px;
-  display: inline-block;
-  /*   @include bkp(sm) {
-    margin-left: -27px;
-  } */
-}
-
-.group-product h2 {
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.group-product h2 + .sub-h2-product {
-  font-weight: 700;
-  line-height: 22px;
-  color: var(--gray-darker);
-}
-
-.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 11px 16px;
-  width: 130px;
-  height: 32px;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  font-weight: 400;
-  line-height: 10px;
-  color: var(--brand-color);
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  background-color: transparent;
-  border: 1px solid #c2c8ca;
-  font-size: 14px;
-  border-radius: 5px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:hover,
-.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:focus,
-.wp-block-button.is-style-outline.btn-ver-prod a.wp-block-button__link:active {
-  background-color: #ffeef2;
-}
-
 /* Post tipo Evento */
 .secondary-text,
 .group-product h2 + p {

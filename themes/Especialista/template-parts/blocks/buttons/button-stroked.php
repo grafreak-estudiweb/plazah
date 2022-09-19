@@ -5,11 +5,10 @@
  *
  */
 
-$className = 'button-primary-stroked';
+$className = 'btn-secondary-stroked';
 if (!empty($block['className'])) {
     $className .= ' ' . $block['className'];
 }
-
 ?>
 
 <div class="<?php echo $className; ?>">
