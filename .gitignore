@@ -15,4 +15,4 @@ uploads
 .DS_Store
 *.code-workspace
 z_old*.*
-
+.vscode/
