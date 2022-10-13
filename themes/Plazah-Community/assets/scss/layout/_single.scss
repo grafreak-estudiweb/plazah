@@ -1,0 +1,144 @@
+.single header {
+    .top-header {
+        width: 100%;
+        padding: 15px 0;
+        background-color: var(--gray-lightest);
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .top-header .container {
+        position: relative;
+    }
+    .top-header p {
+        margin-bottom: 0;
+    }
+}
+
+.single {
+    p {
+        line-height: 150%;
+    }
+    h1,
+    h2 {
+        line-height: 115%;
+    }
+    h1 {
+        margin-top: 16px;
+    }
+    .excerpt-single {
+        line-height: 137%;
+    }
+}
+
+.single time {
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: var(--gray-darker);
+}
+
+p.color-203 {
+    line-height: 137% !important;
+}
+
+p.color-203.bolder {
+    line-height: 115% !important;
+}
+
+/* NRA added on 2020/08/03: */
+
+.single-main > .row:first-of-type {
+    padding-top: 4px;
+}
+
+/* Post tipo Ranking */
+
+/* Post tipo Evento */
+
+.secondary-text,
+.group-product h2 + p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--gray-darker);
+}
+
+.primary-btn {
+    width: 100%;
+}
+
+.primary-btn a {
+    background: var(--brand-color);
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 48px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.primary-btn a:hover,
+.primary-btn a:focus,
+.primary-btn a:active {
+    background-color: #d61f52 !important;
+}
+
+.likebtn_container {
+    margin-left: 0 !important;
+    padding-bottom: 16px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    figure.size-full,
+    figure.is-type-video {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .primary-btn {
+        max-width: 310px;
+    }
+}
+
+/* Post tipo Formación */
+iframe.youtube-player svg .ytp-large-play-button-bg {
+    fill: white !important;
+}
+
+iframe.youtube-player svg path:last-of-type {
+    fill: black !important;
+}
+
+.lb-style-custom .lb-like,
+.lb-style-custom .lb-dislike {
+    height: 32px !important;
+    width: 32px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 !important;
+}
+
+.single-main .lb-style-custom .lb-count {
+    font-size: 0.875rem !important;
+    color: var(--gray-darkest);
+    top: 4px;
+}
+
+.single-main #lb-label {
+    font-size: 0.875rem;
+    padding-left: 0.95em !important;
+}

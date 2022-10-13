@@ -1,0 +1,206 @@
+.bg-f5 {
+    background-color: var(--gray-lightest);
+}
+
+.box-sh-1 {
+    box-shadow: 0px 1px 0px var(--gray-light);
+}
+
+.color-203 {
+    color: var(--gray-darkest) !important;
+}
+
+.color-74 {
+    color: var(--gray-darker) !important;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-11 {
+    font-size: 11px !important;
+}
+
+.font-40 {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.bolder {
+    font-weight: 700 !important;
+}
+
+.span-articles {
+    padding: 3px 9px;
+    background: var(--gray-light);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.a-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.mt-51 {
+    margin-top: 51px;
+}
+
+.mt-101 {
+    margin-top: 101px;
+}
+
+.mt-56 {
+    margin-top: 56px;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 15px;
+    vertical-align: middle;
+}
+
+.btn-heart {
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 0.47rem;
+    border: 1px solid var(--gray-default);
+    width: 32px;
+    height: 32px;
+}
+
+.btn-heart:focus {
+    box-shadow: none;
+}
+
+.btn-heart:hover {
+    border: 1px solid var(--gray-default);
+}
+
+.btn-heart:active,
+.btn-heart.active {
+    background-color: var(--light);
+    border: 1px solid var(--gray-default);
+}
+
+.icon-dislike {
+    display: block !important;
+}
+
+.icon-like {
+    display: none !important;
+}
+
+.btn-heart:active > .icon-dislike,
+.btn-heart.active > .icon-dislike {
+    display: none !important;
+}
+
+.btn-heart:active > .icon-like,
+.btn-heart.active > .icon-like {
+    display: block !important;
+}
+
+.btn-ver-producto {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 16px;
+    gap: 8px;
+
+    width: 115px;
+    height: 32px;
+    left: 127px;
+    top: 738px;
+    background: var(--light);
+
+    font-weight: 400;
+    line-height: 10px;
+    color: var(--brand-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid var(--gray-default);
+    padding: 0.375rem 1rem;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-ver-producto:hover {
+    color: var(--brand-color);
+    background-color: var(--gray-lightest);
+}
+
+.btn-ver-producto:focus {
+    box-shadow: none;
+}
+
+span p .color-74 {
+    color: var(--gray-darker) !important;
+    text-decoration: solid;
+    text-decoration-line: none;
+}
+
+@media screen and (max-width: 768px) {
+    .lh-22 {
+        line-height: 22px;
+    }
+    .font-16 {
+        font-size: 14px;
+    }
+    .font-40 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #likes_counter {
+        display: inline-block !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.filled {
+    color: var(--gray-darkest) !important;
+}
+
+#search:focus {
+    border: 1px solid var(--secondary);
+}
+
+.categories {
+    margin-right: 8px;
+}
+
+.align-span {
+    white-space: nowrap;
+    margin-left: 16px;
+}
+
+#img-heart {
+    max-width: none;
+}
