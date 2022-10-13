@@ -1,0 +1,31 @@
+/* colors */
+
+body[data-theme="default"] {
+    --brand-color: #fc2561;
+    --brand-darker: #d62052; // darken(var(--brand-color), 15%);
+    --brand-darkest: #b01a44; // darken(var(--brand-color), 30%);
+    --brand-light: #fecddb; // lighten(var(--brand-color), 77%);
+    --brand-lightest: #ffeef2; // lighten(var(--brand-color), 92%);
+    --secondary: #319ce7;
+    --gray-default: #c2c8ca;
+    --gray-darker: #747a7b;
+    --gray-darkest: #20313a;
+    --gray-light: #e6ecf0;
+    --gray-lightest: #f5f6f7;
+    --light: #ffffff;
+}
+
+body[data-theme="ladymall"] {
+    --brand-color: #e6427a;
+    --brand-darker: #c33868; // darken(var(--brand-color), 15%);
+    --brand-darkest: #a12e55; // darken(var(--brand-color), 30%);
+    --brand-light: #f9d3e0; // lighten(var(--brand-color), 77%);
+    --brand-lightest: #fdf0f4; // lighten(var(--brand-color), 92%);
+    --secondary: #319ce7;
+    --gray-default: #c2c8ca;
+    --gray-darker: #747a7b;
+    --gray-darkest: #20313a;
+    --gray-light: #e6ecf0;
+    --gray-lightest: #f5f6f7;
+    --light: #ffffff;
+}

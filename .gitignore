@@ -4,9 +4,9 @@
 
 !themes
 themes/*
-!themes/Especialista/
-themes/Especialista/css/*
-themes/Especialista/assets/css/*
+!themes/Plazah-Community/
+themes/Plazah-Community/css/*
+themes/Plazah-Community/assets/css/*
 
 languages
 upgrade
